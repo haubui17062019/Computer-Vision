@@ -13,4 +13,5 @@
   - Có 2 định dạng khác nhau cho các tệp dữ liệu thử nghiệm:
     - Protobuf được tuần tự hóa TensorProtos (.pb) được lưu trong các thư mục có quy ước đặt tên là test_data_set_*
     - Các kho lưu trữ Numpy được tuần tự hóa, được lưu trữ trong các tệp có quy ước đặt tên test_data_*.npz. Mỗi tệp chứa một bộ đầu vào và đầu ra thử nghiệm
+  - Code: Trong ví dụ này, sẽ sử dụng model zoo là vgg16 - Code ở: Pre_trained_ONNX_model-zoo.ipynb
 4.  
