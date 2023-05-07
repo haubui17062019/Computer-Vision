@@ -7,6 +7,7 @@
   - Mọi phụ trợ ONNX phải hỗ trợ chạy mô hình ngay lập tức. Sau khi giải nén tarball của từng mô hình, sẽ có:
     - Tệp protobuf model.onnx đại diện cho mô hình ONNX được tuần tự hóa
     - Dữ liệu thử nghiệm ( ở dạng tệp TensorProto protobuf được tuần tự hóa hoặc kho lưu trữ Numpy được tuần tự hóa)
+  - Code ở: Usega_ONNX.ipynb
 3. Cách sử dụng - Kiểm tra mã khởi động dữ liệu
   - Sử dụng dữ liệu thử nghiệm từ mô hình ONNX từ Model Zoo.
   - Có 2 định dạng khác nhau cho các tệp dữ liệu thử nghiệm:
