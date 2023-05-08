@@ -14,4 +14,8 @@
     - Protobuf được tuần tự hóa TensorProtos (.pb) được lưu trong các thư mục có quy ước đặt tên là test_data_set_*
     - Các kho lưu trữ Numpy được tuần tự hóa, được lưu trữ trong các tệp có quy ước đặt tên test_data_*.npz. Mỗi tệp chứa một bộ đầu vào và đầu ra thử nghiệm
   - Code: Trong ví dụ này, sẽ sử dụng model zoo là vgg16 - Code ở: Pre_trained_ONNX_model-zoo.ipynb
-4.  
+4. Tự buld một Model bằng Pytorch và chuyển sang ONNX
+  - Khi đặt cả hai model vào GPU, sau nhiều lần thử nghiệm thì thấy thời gian xử lý của ONNX nhanh hơn Pytorch
+  - Trong ví dụ này: onnx gần như là nhanh tuyệt đối với 98/100
+  - Code ở: 
+6. 
