@@ -17,5 +17,5 @@
 4. Tự buld một Model bằng Pytorch và chuyển sang ONNX
   - Khi đặt cả hai model vào GPU, sau nhiều lần thử nghiệm thì thấy thời gian xử lý của ONNX nhanh hơn Pytorch
   - Trong ví dụ này: onnx gần như là nhanh tuyệt đối với 98/100
-  - Code ở: 
+  - Code ở: Build_Model_to_ONNX.ipynb
 6. 
