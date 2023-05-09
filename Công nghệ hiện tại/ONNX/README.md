@@ -1,4 +1,4 @@
-0. Xuất mô hình từ Pytorch sang ONNX
+### 0. Xuất mô hình từ Pytorch sang ONNX
   - Trong phần này, sẽ chuyển đổi một model sang ONNX
   - Hạn chế:
     - Mô hình là động, ví dụ như thay đổi hành vi tùy thuộc vào dữ liệu đầu vào, thì quá trình không chính xác.
