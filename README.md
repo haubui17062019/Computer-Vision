@@ -5,5 +5,6 @@
              + Detection: Yolo series
 
 ### Công nghệ hiện tại
-- Tìm hiểu cách chuyển đổi từ mô hình pytorch sang ONNX
-- Cách sử dụng model ONNX
+- Convert model to ONNX:
+  - Tìm hiểu cách chuyển đổi từ mô hình pytorch sang ONNX
+  - Cách sử dụng model ONNX
