@@ -19,3 +19,8 @@
 ### 5. Convert Faster-RCNN to ONNX
   - Model Faster-RCNN được lấy từ thư viện torchvision
   - Code ở: Faster-RCNN-ONNX.ipynb
+### 6. Đánh đổi giữa hiệu suất và độ chính xác
+  - Trong các chuyển đổi của model, tất cả đều dùng float32
+  - Chuyển đổi mô hình sử dụng float16 có thể giảm kích thước mô hình (đến một nửa) và cải thiện hiệu suất trên một số GPU.
+  - Khi chuyển đổi về float16 thì có thể mất mát về độ chính xác
+  
