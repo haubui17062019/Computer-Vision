@@ -31,6 +31,6 @@ Phần warn-up, em làm ở trong phần 7
   - Load model float32 ở session_fp32
   - Sử dụng quantize_static được mô hình session_quant (từ fpt32 sang uint8)
   - So sánh kích thước: session_quant (3.5MB) nhẹ hơn session_fp32 (13.4MB) (khoảng 4 lần)
-  - So sánh tốc độ: Có vẻ như là float32 nhanh hơn uint8
+  - So sánh tốc độ: Có vẻ như là float32 nhanh hơn uint8 (Như ở phần 6 thì khi quantize thì nó sẽ nhanh hơn trên một số GPU, phần này em đang cho chạy trên CPU)
   - So sánh accuracy: fp32 có độ chính xác hơn uint8 (0.83 và 0.80)
   - Code ở: Quantize-ONNX.ipynb
