@@ -19,8 +19,17 @@
 ### 5. Convert Faster-RCNN to ONNX
   - Model Faster-RCNN được lấy từ thư viện torchvision
   - Code ở: Faster-RCNN-ONNX.ipynb
+### Bổ sung
 ### 6. Đánh đổi giữa hiệu suất và độ chính xác
   - Trong các chuyển đổi của model, tất cả đều dùng float32
   - Chuyển đổi mô hình sử dụng float16 có thể giảm kích thước mô hình (đến một nửa) và cải thiện hiệu suất trên một số GPU.
   - Khi chuyển đổi về float16 thì có thể mất mát về độ chính xác
-  
+### 7. Quantize model ONNX
+  - Sử dụng model mobilenet_v2 
+  - Chuyển đổi sang ONNX 
+  - Load model float32 ở session_fp32
+  - Sử dụng quantize_static được mô hình session_quant (từ fpt32 sang uint8)
+  - So sánh kích thước: session_quant (3.5MB) nhẹ hơn session_fp32 (13.4MB) (khoảng 4 lần)
+  - So sánh tốc độ: Có vẻ như là float32 nhanh hơn uint8
+  - So sánh accuracy: fp32 có độ chính xác hơn uint8 (0.83 và 0.80)
+  - Code ở: Quantize-ONNX.ipynb
